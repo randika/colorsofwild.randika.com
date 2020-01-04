@@ -1,56 +1,140 @@
-![Jekyll Lens](https://i.imgur.com/Qi7gdQC.png)
+# Lens - Jekyll Theme
 
-# Lens
-*A Jekyll website  for photographers and photo bloggers.*
+A Jekyll version of the "Lens" theme by [HTML5 UP](https://html5up.net/).
 
-**Lens** is a photo gallery [Jekyll](https://jekyllrb.com/) theme designed
-specially for photographers and photo bloggers.
+![Lens Theme](assets/images/lens.jpg "Lens Theme")
 
-Jekyll Lens uses [Jekyll](https://jekyllrb.com/) Static Site Generator (SSG) to
-generate the website and [GitHub Pages](https://pages.github.com) to host it.
+# How to Use
 
-## Features
+For those unfamiliar with how Jekyll works, check out [https://jekyllrb.com/](https://jekyllrb.com/) for all the details,
+or read up on just the basics of [front matter](https://jekyllrb.com/docs/frontmatter/), [writing posts](https://jekyllrb.com/docs/posts/),
+and [creating pages](https://jekyllrb.com/docs/pages/).
 
-  ✅ Free & Easy setup  
-  ✅ No coding required  
+- **GitLab**: Simply fork this repository and start editing the `_config.yml` file!  
+- **GitHub**: Fork this reposity and create a branch named `gh-pages`, then start editing the `_config.yml` file!
 
-You won't need any expensive server, just to host a photo blog. You don't
-even need to code anything. Just follow the steps below to setup your photo blog
-in minutes.
+# Issues
 
-## Get Started
+If you would like to report a bug, ask a question, request a feature, feel free to do so on [the GitLab repository](https://gitlab.com/andrewbanchich/lens-jekyll-theme) and I will be more than happy to help!
 
-1.  Fork this repository by clicking the **Fork** button at the top right.
+Alternatively, you can open an issue via email by emailing [incoming+andrewbanchich/lens-jekyll-theme@incoming.gitlab.com](mailto:incoming+andrewbanchich/lens-jekyll-theme@incoming.gitlab.com).
 
-1.  Enable [GitHub Pages](https://pages.github.com) from the repository
-    settings.  
-    Your site will be automatically generated and published at
-    `https://<username>.github.io/<repository_name>`. You can also add your
-    custom domain if you want.  
-    (For more details visit: [GitHub Pages](https://pages.github.com)).
+The GitHub repository is simply a mirror of the GitLab repository.
 
-1.  Modify the `_config.yml` file to your liking.  
-    More information on each key in the `_config.yml` file has been described in
-    the file itself, as comments.
+# Credits
 
-1.  Upload your pictures in the `gallery` folder (and remove the default ones if
-    you want).
+Original README from HTML5 UP:
 
-1.  Now, visit your website and see the magic! 🎉
+```
+Lens by HTML5 UP
+html5up.net | @ajlkn
+Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 
-> If you liked this project, please ⭐ **Star** this repository to show your
->  love.
 
-#### Have any questions?
-If you have a bug or an idea, feel free to open a [new issue](https://github.com/ElasticDesigns/jekyll-lens/issues/new).
+This is Lens, a full screen (and entirely responsive) photo gallery design. Unlike previous
+designs I've done in this vein (Parallelism, for instance), this one eschews the usual
+lightbox in favor of a completely full screen experience -- one that I'm happy to say
+translates awesomely all the way down to the tiniest of mobile devices. Full instructions
+below!
 
-#### Want to contribute?
-If you want to contribute, make your changes or enhancements and [open a
-pull request](https://github.com/ElasticDesigns/jekyll-lens/compare).
+Demo images* courtesy of Unsplash, a radtastic collection of CC0 (public domain) images
+you can use for pretty much whatever.
 
-> Feedback and bug reports are not only welcome, but strongly encouraged. 😄
+(* = Not included)
 
-### Credits
-The HTML5 version of Lens template is designed by [HTML5UP](https://html5up.net/lens).
-A special thanks to them for the design, which I further enhanced for use with
-Jekyll.
+Feedback, bug reports, and comments are not only welcome, but strongly encouraged :)
+
+AJ
+aj@lkn.io | @ajlkn
+
+
+Instructions:
+
+	Overview:
+
+		Lens is made up of three primary components:
+
+		- The "main wrapper": The skinny little column on the right. Home to what little
+		  "regular" content you may have (header, footer, anything else you want to cram
+		  in there), as well as ...
+
+		- The "thumbnails" section: A grid of thumbnails pointing to their respective
+		  full size images.
+
+		- The "viewer": Basically the rest of the page, and basically where your full size
+		  images will show up when a thumbnail is clicked.
+
+		Note: Only the main wrapper and the thumbnails section are actually present in
+		index.html. The viewer will be dynamically created on page load.
+
+	How it works:
+
+		Just add your thumbnails to the thumbnails section in the following format:
+
+			<article>
+				<a class="thumbnail" href="path/to/fullsize.jpg">
+					<img src="path/to/thumbnail.jpg" alt="" />
+				</a>
+				<h2>Title</h2>
+				<p>Description.</p>
+			</article>
+
+		And that's it. Lens will figure out the rest.
+
+	The "data-position" attribute:
+
+		As a full screen experience, the viewer will be subject to changes in its size and,
+		consequently, its aspect ratio. Since your full size images are basically applied as
+		backgrounds to the viewer itself, this means they'll probably (okay, definitely) get
+		cropped. All is not lost, however, as you can use the optional "data-position" attribute
+		to control how the full size image is positioned within the viewer. To do this, simply
+		add it to your thumbnail's <a> element and set it to any valid "background-position"
+		value. For example, this:
+
+			<a class="thumbnail" href="path/to/fullsize.jpg" data-position="top left">...</a>
+
+		... positions this particular full size image in the top left corner of the viewer (as
+		opposed to its center, the default), effectively limiting cropping to everything but
+		the top left corner.
+
+	Keyboard shortcuts:
+
+		Lens is set up to respond to the following keyboard shortcuts:
+
+		- Left Arrow: Go to previous image.
+		- Right Arrow: Go to next image.
+		- Up Arrow: Go to image above the current one in the thumbnails section.
+		- Down Arrow: Go to image below the current one in the thumbnails section.
+		- Space: Go to next image.
+		- Escape: Toggle the main wrapper.
+
+		Note: All keyboard shortcuts are disabled when the "xsmall" breakpoint is active
+		(since they don't really make a whole lot of sense there).
+
+	Other stuff:
+
+		- The main wrapper can be moved to the left by changing the "misc.main-side" variable
+		  in assets/sass/libs/_vars.scss to "left" (and of course recompiling your CSS).
+
+		- Additional tweakable settings can be found at the top of assets/js/main.js, but
+		  be aware most of these need to sync with certain Sass variables (see comments
+		  for details).
+
+
+Credits:
+
+	Demo Images:
+		Unsplash (unsplash.com)
+
+	Icons:
+		Font Awesome (fortawesome.github.com/Font-Awesome)
+
+	Other:
+		jQuery (jquery.com)
+		html5shiv.js (@afarkas @jdalton @jon_neal @rem)
+		Respond.js (j.mp/respondjs)
+		Skel (skel.io)
+
+```
+
+Repository [Jekyll logo](https://github.com/jekyll/brand) icon licensed under a [Creative Commons Attribution 4.0 International License](http://choosealicense.com/licenses/cc-by-4.0/).

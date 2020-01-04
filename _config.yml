@@ -1,42 +1,25 @@
-## Site Meta ##
-# The title of the website.
-title: "Wildlife of Sri Lanka by Randika Rathugamage"
-# The description of the website
-description: "Wildlife photography"
-# Keywords/tags for you site.
-keywords: "randika, rathugamage, photography, blog, photography-blog, photo-blog"
-# Your copyright message.
-copyright: "Copyright &copy; 2017 - Elastic Designs."
+# Site settings
+title: Lens
+description: Just another fine responsive site template by <a href="http://html5up.net">HTML5 UP</a>
+baseurl: "/lens-jekyll-theme" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site
+author:
 
-## Site Configurations ##
-# 1st heading of the site.
-header: "Wildlife of Sri Lanka"
-# 2nd heading/sub heading of the website.
-subheader: "by Randika Rathugamage"
-# A description/bio of the website.
-bio: "Collection of my favorite wildlife photos"
-social:
-  # Your Twitter username.
-  twitter_username: ""
-  # Your Facebook username.
-  facebook_username: ""
-  # Your Instagram username.
-  instagram_username: ""
-  # GitHub username.
-  github_username: "randika"
-  # Your email address.
-  email: ""
+# Collection settings
+collections:
+  photos:
 
-## Gallery Configuration ##
-# If you modify this, also modify the `default.scope.path` key below.
-gallery_dir: "gallery"
-# Any valid value of "background-position" CSS attribute.
-image_position: "left center"
+# Social settings
+500px_url:
+facebook_url:
+github_url:
+gitlab_url: https://gitlab.com/u/andrewbanchich
+googleplus_url: https://plus.google.com/u/0/+AndrewBanchich
+instagram_url:
+linkedin_url: https://www.linkedin.com/in/andrew-banchich-a4ba1195
+pinterest_url:
+slack_url:
+twitter_url: https://twitter.com/andrewbanchich
 
-## Jekyll Configuration ##
-defaults:
- - scope:
-    # Should be same as the `gallery_dir` key above.
-    path: "gallery"
-   values:
-    image: true
+# Build settings
+markdown: kramdown
