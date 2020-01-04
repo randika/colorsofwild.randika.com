@@ -1,9 +1,9 @@
 # Site settings
-title: Wildtracks
+title: WILDTRACKS
 description: Collection of my personal favorites wildlife photos
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
-author:
+author: Randika Rathugamage
 
 # Collection settings
 collections:
