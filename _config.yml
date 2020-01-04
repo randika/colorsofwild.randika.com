@@ -1,5 +1,5 @@
 # Site settings
-title: Randika Rathugamage
+title: Wildtracks
 description: Collection of my personal favorites wildlife photos
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
@@ -11,9 +11,9 @@ collections:
 
 # Social settings
 500px_url:
-facebook_url:
+facebook_url: https://facebook.com/randika
 github_url:
-gitlab_url: https://gitlab.com/u/randika
+gitlab_url:
 googleplus_url:
 instagram_url: http://instagram.com/randika.wildlife.photography
 linkedin_url: https://www.linkedin.com/in/randika
