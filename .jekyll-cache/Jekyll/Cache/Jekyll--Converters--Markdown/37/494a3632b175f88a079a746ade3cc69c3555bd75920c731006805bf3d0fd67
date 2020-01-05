@@ -1,0 +1,15 @@
+I"O<!-- Thumbnail -->
+<section id="thumbnails">
+	<article>
+		<a class="thumbnail" href="assets/images/fulls/20191228-WILP6027.jpg" data-position="left center"><img src="assets/images/thumbs/20191228-WILP6027.jpg" alt="" /></a>
+		<h2>20191228-WILP6027</h2>
+		<p>The Sri Lankan leopard is a leopard subspecies native to Sri Lanka. This female leopard best known as Cleopatra spotted near Kokkari Willu / Wilpattu National Park, Sri Lanka</p>
+	</article>
+
+	<article>
+		<a class="thumbnail" href="" data-position="left center"><img src="" alt="" /></a>
+		<h2></h2>
+		<p></p>
+	</article>
+</section>
+:ET
