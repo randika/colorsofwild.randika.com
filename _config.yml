@@ -1,6 +1,6 @@
 # Site settings
-title: Randika Rathugamage | Wildlife Photography
-description: Collection of my personal favorites wildlife photos
+title: Wildlife Photography by Randika Rathugamage
+description: Collection of my personal favorite wildlife photos. Follow me at <a href="https://instagram.com/randika.wildlife.photography">Instagram</a>
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
 author: Randika Rathugamage
@@ -15,7 +15,7 @@ facebook_url: https://facebook.com/randika
 github_url:
 gitlab_url:
 googleplus_url:
-instagram_url: http://instagram.com/randika.wildlife.photography
+instagram_url: https://instagram.com/randika.wildlife.photography
 linkedin_url: https://www.linkedin.com/in/randika
 pinterest_url:
 slack_url:
