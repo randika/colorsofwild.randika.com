@@ -4,6 +4,7 @@ description: Collection of my personal favorite wildlife photos. Follow me at <a
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
 author: Randika Rathugamage
+images_base_url: https://s3-ap-southeast-1.amazonaws.com/cdn.photography.lk/users/randika
 
 # Collection settings
 collections:
