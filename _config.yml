@@ -1,6 +1,6 @@
 # Site settings
 title: Colors of Wild
-description: "Welcome to 'Colors of Wild,' a captivating photo journal showcasing the untamed beauty of wildlife. As a passionate enthusiast from the beautiful Sri Lanka, I document animals in their natural habitats, celebrating the vibrant biodiversity of our planet through every photograph."
+description: "Welcome to 'Colors of Wild,' a photo journal celebrating the beauty of wildlife in Sri Lanka. As a passionate enthusiast, I document animals in their natural habitats, showcasing the vibrant biodiversity of this beautiful island through every photograph."
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
 author: Randika Rathugamage
