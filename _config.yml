@@ -1,6 +1,6 @@
 # Site settings
-title: Randika Rathugamage Wildlife Photography
-description: Wildlife enthusiasts from the beautiful Sri Lanka. All photos of animals are taken in their natural habitats.
+title: Colors of Wild by Randika Rathugamage
+description: "Hello, I'm a Wildlife enthusiasts from the beautiful Sri Lanka. All photos of animals are taken in their natural habitats."
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
 author: Randika Rathugamage
@@ -12,15 +12,15 @@ collections:
 
 # Social settings
 500px_url:
-facebook_url: https://facebook.com/randika
+#facebook_url: https://facebook.com/randika
 github_url:
 gitlab_url:
 googleplus_url:
-instagram_url: https://instagram.com/randika.rathugamage
-linkedin_url: https://www.linkedin.com/in/randika
+instagram_url: https://instagram.com/colorsofwild
+#linkedin_url: https://www.linkedin.com/in/randika
 pinterest_url:
 slack_url:
-twitter_url: https://twitter.com/iamrandika
+#twitter_url: https://twitter.com/iamrandika
 
 # Build settings
 markdown: kramdown
