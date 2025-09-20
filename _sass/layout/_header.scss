@@ -11,10 +11,41 @@
 /* Header */
 
 	#header {
-		@include padding(3em, 2.25em);
+		@include padding(4em, 3em);
+		background: linear-gradient(135deg, _palette(bg) 0%, _palette(bg-alt) 100%);
+		border-bottom: 1px solid _palette(border-light);
 
 		h1 {
-			font-size: 2.25em;
+			font-family: _font(family-display);
+			font-size: 2.75em;
 			font-weight: _font(weight-bold);
+			margin-bottom: 0.5em;
+			background: linear-gradient(135deg, _palette(accent) 0%, _palette(accent-alt) 100%);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			background-clip: text;
+		}
+
+		p {
+			font-size: 1.1em;
+			line-height: 1.6;
+			color: _palette(fg-light);
+			max-width: 85%;
+			margin-bottom: 2em;
+		}
+
+		.icons {
+			li {
+				a {
+					@include vendor('transition', 'all 0.3s ease');
+					color: _palette(fg-muted);
+					font-size: 1.2em;
+					
+					&:hover {
+						color: _palette(accent);
+						transform: translateY(-2px);
+					}
+				}
+			}
 		}
 	}

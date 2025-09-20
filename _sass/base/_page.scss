@@ -33,6 +33,6 @@
 		}
 
 	html, body {
-		background-color: _palette(page-bg);
+		background: linear-gradient(135deg, _palette(page-bg) 0%, darken(_palette(page-bg), 5%) 100%);
 		overflow: hidden;
 	}
