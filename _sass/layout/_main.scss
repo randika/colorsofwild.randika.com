@@ -8,7 +8,7 @@
 /// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 ///
 
-/* Main */
+/* Modern Main Layout */
 
 	#main {
 		@include vendor('transition', ('opacity #{_duration(layout)} ease', 'right #{_duration(layout)} ease', 'left #{_duration(layout)} ease', 'visibility #{_duration(layout)}'));
@@ -21,7 +21,7 @@
 		outline: 0;
 		overflow-x: hidden;
 		overflow-y: auto;
-		text-align: _misc(main-align);
+		text-align: left;
 		visibility: visible;
 		z-index: _misc(z-index-base);
 

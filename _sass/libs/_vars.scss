@@ -27,19 +27,22 @@
 
 // Font.
 	$font: (
-		family:				('Roboto', Helvetica, sans-serif),
-		family-fixed:		('Courier New', monospace),
+		family:				('Inter', 'Segoe UI', 'Roboto', Helvetica, sans-serif),
+		family-fixed:		('JetBrains Mono', 'Fira Code', 'Courier New', monospace),
 		weight:				400,
-		weight-bold:		700
+		weight-bold:		600
 	);
 
 // Palette.
 	$palette: (
-		page-bg:			#101010,
+		page-bg:			#0F0F0F,
 		bg:					#fff,
-		fg:					#aaa,
-		fg-bold:			#555,
-		fg-light:			#ccc,
-		border:				#ccc,
-		accent:				#00D3B7
+		fg:					#e8e8e8,
+		fg-bold:			#ffffff,
+		fg-light:			#b8b8b8,
+		border:				#333333,
+		accent:				#FF6B35,
+		accent-secondary:	#4ECDC4,
+		card-bg:			#1a1a1a,
+		card-hover:			#252525
 	);

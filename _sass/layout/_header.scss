@@ -8,13 +8,68 @@
 /// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 ///
 
-/* Header */
+/* Modern Header */
 
 	#header {
-		@include padding(3em, 2.25em);
+		@include padding(4em, 2.25em);
+		text-align: center;
 
 		h1 {
-			font-size: 2.25em;
-			font-weight: _font(weight-bold);
+			font-size: 2.75em;
+			font-weight: 700;
+			margin-bottom: 0.5em;
+			background: linear-gradient(135deg, _palette(accent), _palette(accent-secondary));
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			background-clip: text;
+			letter-spacing: -0.02em;
+		}
+
+		p {
+			font-size: 1.1em;
+			color: _palette(fg-light);
+			max-width: 600px;
+			margin: 0 auto 2em auto;
+			line-height: 1.6;
+		}
+
+		.icons {
+			margin-top: 2em;
+
+			li {
+				a {
+					@include vendor('transition', 'all 0.3s ease');
+					border-radius: 50%;
+					width: 3em;
+					height: 3em;
+					line-height: 3em;
+					
+					&:hover {
+						@include vendor('transform', 'translateY(-2px)');
+						color: _palette(accent);
+						background: rgba(_palette(accent), 0.1);
+					}
+				}
+			}
+		}
+
+		@include breakpoint(medium) {
+			@include padding(3em, 2em);
+
+			h1 {
+				font-size: 2.25em;
+			}
+
+			p {
+				font-size: 1em;
+			}
+		}
+
+		@include breakpoint(small) {
+			@include padding(2.5em, 1.5em);
+
+			h1 {
+				font-size: 2em;
+			}
 		}
 	}
