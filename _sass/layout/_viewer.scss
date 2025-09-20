@@ -120,18 +120,60 @@
 
 			.caption {
 				@include vendor('background-image', (
-					'linear-gradient(bottom, rgba(16,16,16,0.75), rgba(16,16,16,0.25) 80%, rgba(16,16,16,0))',
+					'linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.7) 50%, rgba(0,0,0,0.3) 80%, rgba(0,0,0,0) 100%)',
 				));
-				@include padding(2em, 2em);
+				@include padding(3em, 3em);
 				position: absolute;
 				bottom: 0;
 				left: 0;
 				width: 100%;
-				color: rgba(255,255,255,0.5);
+				color: rgba(255,255,255,0.9);
 				z-index: 1;
+				backdrop-filter: blur(10px);
 
 				h2, h3, h4, h5, h6 {
 					color: #fff;
+					font-family: _font(family-display);
+					margin-bottom: 0.75em;
+					text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+				}
+
+				h2 {
+					font-size: 2em;
+					font-weight: _font(weight-bold);
+				}
+
+				p {
+					font-size: 1.1em;
+					line-height: 1.6;
+					text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+				}
+
+				.meta {
+					display: flex;
+					align-items: center;
+					gap: 1.5rem;
+					margin-top: 1rem;
+					font-size: 0.95em;
+					color: rgba(255,255,255,0.8);
+
+					.date, .location {
+						display: flex;
+						align-items: center;
+						gap: 0.5rem;
+						
+						&:before {
+							font-size: 0.9em;
+						}
+					}
+
+					.date:before {
+						content: '📅';
+					}
+
+					.location:before {
+						content: '📍';
+					}
 				}
 			}
 
